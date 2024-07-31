@@ -1,0 +1,234 @@
+html, body{
+    margin: 0%;
+    font-family: 'monospace', Courier, Courier New;
+    color: rgb(228, 190, 64);
+    background-color: black;
+    font-size: 100%;
+    transition-duration: 3s;
+    scroll-behavior: smooth;
+}
+
+h3{
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.5em;
+}
+
+a, p{
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+}
+
+header{
+    background-color: black;
+}
+
+#marsan-logo-navbar{
+    width: 8em;
+    margin: 1em;
+}
+
+#marsan-title-navbar{
+    display: inline-block;
+    margin-right: 16em;
+    vertical-align: 1em;
+    letter-spacing: 0.2em;
+}
+
+nav{
+    display: inline-block;
+    vertical-align: 2.3em;
+}
+
+.marsan-option-navbar{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(228, 190, 64);
+    font-size: 0.9em;
+    font-weight: 300;
+    margin-right: 2em;
+}
+
+#car-interior{
+    background-image: url("CarBrandInterior.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 800px;
+}
+
+#car-in-img-text{
+    display: inline-block;
+    background-color: black;
+    background-attachment: scroll;
+    margin-top: 670px;
+    margin-left: 55%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.4em;
+    font-weight: bolder;
+    word-spacing: -0.3em;
+}
+
+#about-marsan{
+    width: 50em;
+    padding-top: 5em;
+    margin:auto;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+#about-marsan-title{
+    text-align: center;
+}
+
+#sportscar-img{
+    padding-top: 5em;
+}
+
+#our-services{
+    padding-top: 4em;
+    padding-bottom: 5em;
+}
+
+#our-ser-text-align{
+    width: 17em;
+    margin: auto;
+    text-align: center;
+}
+
+#os1-img-text{
+    line-height: 0%;
+    margin-top: 5em;
+    background-color: rgb(228, 190, 64);
+    color: black;
+}
+
+#driving-sedan-img{
+    width: 50%;
+}
+
+#os1-text{
+    display: inline-block;
+    width: 35em;
+    vertical-align: 10em;
+    margin-left: 3em;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+#os2-img-text{
+    line-height: 0%;
+    background-color: rgb(228, 190, 64);
+    color: black;
+    float: none;
+    overflow: hidden;
+}
+
+#driving-suv-img{
+    width: 50%;
+    float: right;
+}
+
+#os2-text{
+    display: inline-block;
+    width: 35em;
+    line-height: 1.5em;
+    text-align: justify;
+    margin-top: 7.5em;
+    margin-left: 3.2em;
+}
+
+#rectangle{
+    display: inline-block;
+    background-color: rgb(228, 190, 64);
+    width: 30em;
+    height: 25.5em;
+    margin: 5em 5em 5em 8em;
+    
+}
+
+#car-engine{
+    width: 30em;
+    margin-left: 1.5em;
+    margin-top: -1.5em;
+}
+
+#car-engine-title-text{
+    font-size: 2em;
+}
+
+#car-engine-text{
+    display: inline-block;
+    width: 27em;
+    line-height: 1.8em;
+    text-align: justify;
+    vertical-align: 2.5em;
+}
+
+#location{
+    width: 50%;
+    height: 23em;
+    float: right;
+}
+
+#border-location-text{
+    display: inline-block;
+    width: 25em;
+    margin: 1.5em 5em 3em 8em;
+}
+
+#border-box-img-text{
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.marsan-option-footer{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    margin-right: 6em;
+}
+
+#marsan-title-footer{
+    color: black;
+}
+
+#border-box-anchor-text{
+    width: 34em;
+    display: inline-block;
+    margin-left: 31em;
+    line-height: 3em;
+}
+
+#border-box-icon-anchor-text{
+    background-color: rgb(228, 190, 64);
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+#border-box-icon-title{
+    display: inline-block;
+    color: black;
+    line-height: 3em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: -3em;
+    vertical-align: -0.5em;
+}
+
+#chat-icon{
+    width: 1em;
+}
+
+#position-fixed{
+    display: block;
+    background-color: orange;
+    color: black;
+    text-decoration: none;
+    position: fixed;
+    bottom: 2%;
+    right: 1%;
+    padding: 1em 2em 1em 2em;
+    border-radius: 40%;
+    font-weight: bold;
+}
