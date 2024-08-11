@@ -49,6 +49,11 @@ nav{
     margin-right: 2em;
 }
 
+.marsan-option-navbar:hover{
+    text-shadow: 1px 1px 20px rgb(255, 255, 255), 1px 1px 15px rgb(184, 179, 179), 1px 1px 10px rgb(241, 198, 128);
+}
+
+
 #car-interior{
     background-image: url("CarBrandInterior.jpg");
     background-repeat: no-repeat;
@@ -187,6 +192,10 @@ nav{
     text-decoration: none;
     color: black;
     margin-right: 6em;
+}
+
+.marsan-option-footer:hover{
+    color: rgb(104, 103, 103);
 }
 
 #marsan-title-footer{
