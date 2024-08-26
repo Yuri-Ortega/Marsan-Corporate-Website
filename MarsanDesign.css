@@ -1,243 +1,502 @@
-html, body{
-    margin: 0%;
-    font-family: 'monospace', Courier, Courier New;
-    color: rgb(228, 190, 64);
-    background-color: black;
-    font-size: 100%;
-    transition-duration: 3s;
-    scroll-behavior: smooth;
+html,
+body {
+  margin: 0%;
+  color: #e9d14b;
+  background-color: #181717;
+  font-size: 100%;
+  font-family: "Courier New", Courier, monospace;
+  transition: 1s;
 }
 
-h3{
-    font-family: "Roboto Condensed", sans-serif;
-    font-size: 1.5em;
+a {
+  text-decoration: none;
 }
 
-a, p{
-    font-family: "Kanit", sans-serif;
-    font-weight: 300;
-    font-size: 1em;
+p{
+  text-align: justify;
 }
 
-header{
-    background-color: black;
+h1,
+#marsan-title-navbar {
+  letter-spacing: 0.3em;
+  display: inline;
+  vertical-align: middle;
 }
 
-#marsan-logo-navbar{
-    width: 8em;
-    margin: 1em;
+h3 {
+  margin: 0%;
+  padding: 0%;
+  font-size: 2.1em;
 }
 
-#marsan-title-navbar{
-    display: inline-block;
-    margin-right: 16em;
-    vertical-align: 1em;
-    letter-spacing: 0.2em;
+header {
+  padding: 1px 6em 1px 10px;
+  overflow: hidden;
 }
 
-nav{
-    display: inline-block;
-    vertical-align: 2.3em;
+#marsan-logo-navbar {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
 }
 
-.marsan-option-navbar{
-    display: inline-block;
-    text-decoration: none;
-    color: rgb(228, 190, 64);
-    font-size: 0.9em;
-    font-weight: 300;
-    margin-right: 2em;
+#marsan-logo-title {
+  float: left;
 }
 
-.marsan-option-navbar:hover{
-    text-shadow: 1px 1px 20px rgb(255, 255, 255), 1px 1px 15px rgb(184, 179, 179), 1px 1px 10px rgb(241, 198, 128);
+nav {
+  float: right;
 }
 
-
-#car-interior{
-    background-image: url("CarBrandInterior.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 100%;
-    height: 800px;
+.marsan-option-navbar {
+  color: #e9d14b;
+  display: inline-block;
+  padding: 28px 16px;
 }
 
-#car-in-img-text{
-    display: inline-block;
-    background-color: black;
-    background-attachment: scroll;
-    margin-top: 670px;
-    margin-left: 55%;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 2.4em;
-    font-weight: bolder;
-    word-spacing: -0.3em;
+#home{
+  color: rgb(184, 185, 97);
 }
 
-#about-marsan{
-    width: 50em;
-    padding-top: 5em;
-    margin:auto;
-    text-align: justify;
-    line-height: 1.5em;
+.marsan-option-navbar:hover:not(#home){
+  transition: ease-out 0.5s;
+  text-shadow: 2px 2px 5px #c9c6c6, 4px 4px 15px #7c6023;
 }
 
-#about-marsan-title{
-    text-align: center;
+#car-in-img-text {
+  background-color: black;
 }
 
-#sportscar-img{
-    padding-top: 5em;
-}
-
-#our-services{
-    padding-top: 4em;
-    padding-bottom: 5em;
-}
-
-#our-ser-text-align{
-    width: 17em;
-    margin: auto;
-    text-align: center;
-}
-
-#os1-img-text{
-    line-height: 0%;
-    margin-top: 5em;
-    background-color: rgb(228, 190, 64);
-    color: black;
-}
-
-#driving-sedan-img{
-    width: 50%;
-}
-
-#os1-text{
-    display: inline-block;
-    width: 35em;
-    vertical-align: 10em;
-    margin-left: 3em;
-    line-height: 1.5em;
-    text-align: justify;
-}
-
-#os2-img-text{
-    line-height: 0%;
-    background-color: rgb(228, 190, 64);
-    color: black;
-    float: none;
+@media screen and (max-width: 1200px) {
+  header {
+    padding: 1px 2em 1px 10px;
     overflow: hidden;
+  }
+
+  .marsan-option-navbar {
+    padding: 28px 5px;
+  }
 }
 
-#driving-suv-img{
+#car-interior {
+  position: relative;
+  background-image: url("CarBrandInterior.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 50em;
+  width: 100%;
+}
+
+#car-in-img-text {
+  position: absolute;
+  bottom: 20%;
+  right: 20%;
+}
+
+@media screen and (max-width: 900px) {
+  header {
+    padding: 0%;
+  }
+
+  #marsan-logo-title {
+    display: block;
+    text-align: center;
+    float: none;
+  }
+
+  nav {
+    float: none;
+  }
+
+  .marsan-option-navbar {
+    display: block;
+    text-align: center;
+    border-top: 3px #ffffffbe solid;
+  }
+
+  .marsan-option-navbar:last-child {
+    border-bottom: 3px #ffffffbe solid;
+  }
+
+  .marsan-option-navbar:last-child:hover {
+    border-bottom: 3px #5e5c5c solid;
+  }
+
+  .marsan-option-navbar:hover {
+    border-top: 3px #5e5c5c solid;
+    background-color: #dddd7e;
+    color: #5e5c5c;
+  }
+
+  #car-interior {
+    height: 80vh;
+  }
+
+  #car-in-img-text {
+    font-size: 1.4em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #car-interior {
+    height: 50vh;
+  }
+  #car-in-img-text {
+    font-size: 0.8em;
+  }
+}
+
+#about-marsan-title-desc {
+  padding: 10% 15% 0% 15%;
+}
+
+#about-marsan-title {
+  text-align: center;
+}
+
+#sportscar-img {
+  display: block;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+#our-ser-text-align {
+  padding: 10%;
+  text-align: center;
+}
+
+#os1-img-text {
+  background-color: #e9d14b;
+  color: #181717;
+  overflow: hidden;
+}
+
+#driving-sedan-img {
+  width: 50%;
+  height: auto;
+  float: left;
+  display: block;
+}
+
+#os1-text {
+  display: inline-block;
+  margin: 7% 5% 0% 5%;
+  width: 40%;
+  box-sizing: border-box;
+}
+
+#os2-img-text {
+  background-color: #e9d14b;
+  color: #181717;
+  overflow: hidden;
+  clear: both;
+}
+
+#driving-suv-img {
+  width: 50%;
+  height: auto;
+  float: right;
+  display: block;
+}
+
+#os2-text {
+  display: inline-block;
+  margin: 8.5% 5% 0% 5%;
+  width: 40%;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1200px) {
+  #os1-text {
+    margin: 3% 5% 0% 5%;
+  }
+
+  #os2-text {
+    margin: 3.5% 5% 0% 5%;
+  }
+  #os1-text > h3 {
+    font-size: 1.8em;
+  }
+
+  #os2-text > h3 {
+    font-size: 1.8em;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #os1-text > h3 {
+    font-size: 1.2em;
+  }
+
+  #os2-text > h3 {
+    font-size: 1.2em;
+  }
+
+  #os1-text > p {
+    font-size: 0.9em;
+  }
+
+  #os2-text > p {
+    font-size: 0.9em;
+  }
+
+  #driving-sedan-img {
+    width: 30%;
+    height: auto;
+  }
+
+  #os1-text {
+    margin: 1% 1% 0% 2%;
+    width: 65%;
+  }
+
+  #driving-suv-img {
+    width: 30%;
+    height: auto;
+  }
+
+  #os2-text {
+    margin: 1.5% 1% 0% 2%;
+    width: 67%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #driving-sedan-img {
+    width: 100%;
+    float: none;
+  }
+
+  #os1-text {
+    display: table;
+    margin: auto;
+    margin: 10%;
+    width: 80%;
+  }
+
+  #driving-suv-img {
+    width: 100%;
+    float: none;
+  }
+
+  #os2-text {
+    display: table;
+    margin: auto;
+    margin: 10%;
+    width: 80%;
+  }
+}
+
+#rectangle-car-engine {
+  display: inline-block;
+  padding: 10% 8% 10% 15%;
+}
+
+#rectangle {
+  position: relative;
+  display: inline-block;
+  background-color: #e7bd34;
+  width: 405px;
+  height: 345px;
+}
+
+#car-engine {
+  position: absolute;
+  top: -10%;
+  right: -10%;
+  width: 100%;
+  height: auto;
+  float: right;
+}
+
+#car-engine-text {
+  display: inline-block;
+  width: 35%;
+}
+
+@media screen and (max-width: 1200px) {
+  #rectangle-car-engine {
+    padding: 10% 8% 10% 10%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #car-engine {
+    display: block;
+  }
+
+  #rectangle-car-engine {
+    display: block;
     width: 50%;
-    float: right;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: auto;
+  }
+
+  #car-engine-text {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+  }
 }
 
-#os2-text{
+@media screen and (max-width: 600px) {
+
+  #rectangle {
+    position: relative;
     display: inline-block;
-    width: 35em;
-    line-height: 1.5em;
-    text-align: justify;
-    margin-top: 7.5em;
-    margin-left: 3.2em;
-}
-
-#rectangle{
-    display: inline-block;
-    background-color: rgb(228, 190, 64);
-    width: 30em;
-    height: 25.5em;
-    margin: 5em 5em 5em 8em;
-    
-}
-
-#car-engine{
-    width: 30em;
-    margin-left: 1.5em;
-    margin-top: -1.5em;
-}
-
-#car-engine-title-text{
-    font-size: 2em;
-}
-
-#car-engine-text{
-    display: inline-block;
-    width: 27em;
-    line-height: 1.8em;
-    text-align: justify;
-    vertical-align: 2.5em;
-}
-
-#location{
+    background-color: #e7bd34;
+    width: 330px;
+    height: 280px;
+  }
+  
+  #rectangle-car-engine {
+    display: block;
     width: 50%;
-    height: 23em;
-    float: right;
-}
+    margin-top: 10%;
+    margin-left: 6%;
+    margin-right: auto;
+  }
 
-#border-location-text{
-    display: inline-block;
-    width: 25em;
-    margin: 1.5em 5em 3em 8em;
+  #car-engine-text {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+  }
 }
 
 #border-box-img-text{
-    padding-top: 5em;
-    padding-bottom: 5em;
+  overflow: hidden;
+  padding: 1%;
 }
 
-.marsan-option-footer{
-    display: inline-block;
-    text-decoration: none;
-    color: black;
-    margin-right: 6em;
+#border-location-text{
+  padding-left: 10%;
+  line-height: 3em;
 }
 
-.marsan-option-footer:hover{
-    color: rgb(104, 103, 103);
+#location{
+  float: right;
+  width: 40%;
 }
 
-#marsan-title-footer{
-    color: black;
+@media screen and (max-width: 1200px) {
+  #location{
+    width: 27em;
+  }
 }
 
-#border-box-anchor-text{
-    width: 34em;
-    display: inline-block;
-    margin-left: 31em;
-    line-height: 3em;
+@media screen and (max-width: 900px) {
+  #border-location-text{
+    padding-left: 2%;
+    line-height: 2.5em;
+    font-size: 90%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  #location{
+    width: 15em;
+  }
+  #border-location-text{
+    padding-left: 10%;
+    line-height: 2em;
+    font-size: 70%;
+    width: 40%;
+  }
 }
 
 #border-box-icon-anchor-text{
-    background-color: rgb(228, 190, 64);
-    padding-top: 2em;
-    padding-bottom: 2em;
+  background-color: #e7bd34;
+  color: #2c2727;
+  height: 10em;
+  font-weight: 800;
+}
+
+#border-box-anchor-text{
+  display: inline-block;
+  margin-left: 30%;
+  max-width: 60%;
+  padding-top: 3em;
+}
+
+.marsan-option-footer{
+  line-height: 1.8em;
+  display: inline-block;
+  width: 27.5em;
+}
+
+.marsan-option-footer > a{
+  color: #2c2727;
 }
 
 #border-box-icon-title{
-    display: inline-block;
-    color: black;
-    line-height: 3em;
-    text-align: center;
-    text-transform: uppercase;
-    margin-left: -3em;
-    vertical-align: -0.5em;
-}
-
-#chat-icon{
-    width: 1em;
+  display: inline-block;
+  text-align: center;
 }
 
 #position-fixed{
+  position: fixed;
+  bottom: 3%;
+  right: 1%;
+  background-color: rgb(236, 150, 20);
+  color: #2c2727;
+  padding: 15px;
+  border-radius: 3em;
+  font-weight: 700;
+}
+
+#chat-icon{
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 1200px){
+  #border-box-anchor-text{
+    margin-left: 15%;
+  }
+}
+
+@media screen and (max-width: 900px){
+  #border-box-anchor-text{
+    margin-left: 5%;
+  }
+
+  #border-box-icon-title{
+    display: inline-block;
+    text-align: center;
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 600px){
+
+  #border-box-icon-anchor-text{
+    height: 15em;
+  }
+
+  .marsan-option-footer{
+    text-align: left;
+  }
+
+  #border-box-anchor-text{
+    text-align: center;
+    padding-top: 2em;
     display: block;
-    background-color: orange;
-    color: black;
-    text-decoration: none;
-    position: fixed;
-    bottom: 2%;
-    right: 1%;
-    padding: 1em 2em 1em 2em;
-    border-radius: 40%;
-    font-weight: bold;
+    max-width: 100%;
+    margin-left: 0%;
+  }
+
+  #border-box-icon-title{
+    display: block;
+    text-align: center;
+    font-size: 70%;
+    line-height: 4em;
+  }
 }
