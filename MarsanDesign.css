@@ -167,6 +167,10 @@ nav {
   text-align: center;
 }
 
+#our-ser-text-align > p {
+  text-align: center;
+}
+
 #os1-img-text {
   background-color: #e9d14b;
   color: #181717;
@@ -491,6 +495,10 @@ nav {
     display: block;
     max-width: 100%;
     margin-left: 0%;
+  }
+
+  #border-box-anchor-text > p{
+    text-align: center;
   }
 
   #border-box-icon-title{
